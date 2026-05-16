@@ -1,0 +1,25 @@
+curl -s https://api.github.com/repos/<your-github-username>/mcino-Introduction-to-Git-and-GitHub
+
+# Terminal output (truncated). This shows the repository is a fork and lists the parent repository:
+{
+  "id": 123456789,
+  "name": "mcino-Introduction-to-Git-and-GitHub",
+  "full_name": "<your-github-username>/mcino-Introduction-to-Git-and-GitHub",
+  "private": false,
+  "fork": true,
+  "owner": {
+    "login": "<your-github-username>",
+    "id": 987654321
+  },
+  "parent": {
+    "id": 111111111,
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+    "owner": {
+      "login": "ibm-developer-skills-network"
+    }
+  }
+}
+
+# To reproduce on your machine, run:
+# curl -s https://api.github.com/repos/<your-github-username>/mcino-Introduction-to-Git-and-GitHub
+# and save the output to this file, or replace <your-github-username> with your GitHub username.
